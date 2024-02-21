@@ -38,7 +38,7 @@ public class JwtService {
             try {
                 username = getUsername(jwt);
             } catch (ExpiredJwtException | SignatureException e) {
-//                throw new RuntimeException(e.getMessage());
+                System.out.println(e.getMessage());
             }
         }
         return username;
