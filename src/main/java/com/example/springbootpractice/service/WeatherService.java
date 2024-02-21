@@ -22,6 +22,7 @@ public class WeatherService {
         this.restTemplate = new RestTemplate();
         this.weatherResponseMapper = weatherResponseMapper;
     }
+
     public WeatherResponse weatherResponse() throws JsonProcessingException {
         ResponseEntity<String> responseEntity = restTemplate.getForEntity(
                 HTTPS_API_ToMORROW + "?location=" + LOCATION + "&apikey=" + APIKEY, String.class);
