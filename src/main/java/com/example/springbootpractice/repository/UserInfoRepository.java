@@ -13,7 +13,7 @@ public class UserInfoRepository {
     private Map<String, UserInfo> userInfos = new HashMap<>();
 
     {
-        userInfos.put("Yury", new UserInfo(1, "Yury", "yury@gmail.com", "$2a$12$SV0XMtTM1ZRxRF5voPUZ4OvqHu0AGZyR5XYwo9Onbxw.v3MtlpqXW"));
+        userInfos.put("Yury", new UserInfo(1, "Yury", "yury@gmail.com", "123"));
     }
 
     public Optional<UserInfo> findByName(String username) {

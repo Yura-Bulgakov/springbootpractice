@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/v1/info")
 public class InfoController {
     private final WeatherService weatherService;
 
@@ -17,7 +17,7 @@ public class InfoController {
         this.weatherService = weatherService;
     }
 
-    @GetMapping
+    @GetMapping("/weather")
     public String getWeather() throws JsonProcessingException {
         return weatherService.weatherResponse().toString();
     }

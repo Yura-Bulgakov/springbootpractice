@@ -2,5 +2,5 @@ server:
   port: 8080
 
 jwt:
-  secret: 1230489dg9f0fsdf23423sdfgsr23
+  secret: 1230489dg9f0fsdf23423sdfgsr23ffsrrwerwer234sdasduilmjmkthyjfgh
   lifetime: 30m

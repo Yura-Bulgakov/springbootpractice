@@ -11,4 +11,12 @@ public class AuthRequest {
     public String getUsername() {
         return username;
     }
+
+    public AuthRequest() {
+    }
+
+    public AuthRequest(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
